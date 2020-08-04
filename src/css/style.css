@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+body {
+    background-color: #1d1d1d;
+}
+
+h2 {
+    font-family: "Staatliches", sans-serif;
+    color: #cea212;
+    font-size: 60px;
+}
+
+/*Welcome Component*/
+.welcome-container {
+    display: flex;
+    background-color: red;
+    height: 96vh;
+    border-color: #cea212;
+    border-style: double;
+    border-width: 8px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-container {
+    width: 35%;
+    height: 50%;
+    border: 1px solid blue;
+    text-align: center;
+}
