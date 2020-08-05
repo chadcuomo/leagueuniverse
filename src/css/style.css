@@ -8,12 +8,15 @@ h2 {
     font-family: "Staatliches", sans-serif;
     color: #cea212;
     font-size: 60px;
+    margin: auto;
 }
 
 /*Welcome Component*/
 .welcome-container {
     display: flex;
-    background-color: red;
+    background-image: url("/images/league-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 96vh;
     border-color: #cea212;
     border-style: double;
@@ -24,8 +27,67 @@ h2 {
 }
 
 .center-container {
-    width: 35%;
-    height: 50%;
-    border: 1px solid blue;
+    width: 65%;
     text-align: center;
 }
+
+.center-button {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*Grey Button*/
+.grey-button {
+    background: #1d1d1d;
+    font-family: "Staatliches", sans-serif;
+    color: #cea212;
+    border-color: #cea212;
+    border-style: solid;
+    border-width: 1px;
+    padding: 3px 25px 3px 25px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  
+  .grey-button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #cea212;
+    border: #1d1d1d solid 1px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  
+  .grey-button:hover,
+  .grey-button:focus,
+  .grey-button:active {
+    color: #1d1d1d;
+  }
+  
+  .grey-button:hover:before,
+  .grey-button:focus:before,
+  .grey-button:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
