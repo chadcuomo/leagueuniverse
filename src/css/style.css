@@ -98,3 +98,75 @@ h2 {
   .mainpage-container {
     border: red solid 1px;
   }
+
+  /* Main Header */
+  .mainheader-container {
+    background-image: url("/images/league-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #cea212 double 8px;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+
+  .mainheader-text {
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0;
+  }
+
+  .mainheader-search {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search {
+    width: 500px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 7px;
+    border: #cea212 solid 3px;
+    border-right: none;
+  }
+
+  .search:focus {
+    outline: thin; 
+  }
+
+  
+
+  .search-img-ctn {
+    background-color: white;
+    border-radius: 7px;
+    border: #cea212 solid 3px;
+    border-left: white;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding-right: 7px;
+    margin-left: -7px;
+  }
+  .search-img {
+    width: 20px;
+    padding-top: 7px;
+    
+  }
+
+  @media screen and (max-width: 560px) {
+    /*Main Header*/
+    .mainheader-container{
+      height: auto;
+    }
+
+    .search{
+      width: 225px;
+    }
+  }
