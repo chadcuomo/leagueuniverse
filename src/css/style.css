@@ -24,6 +24,8 @@ h2 {
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    transform: translateY(-120%);
+    position: absolute;
 }
 
 .center-container {
@@ -90,4 +92,9 @@ h2 {
   .grey-button:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+  }
+
+  /* Main Page */
+  .mainpage-container {
+    border: red solid 1px;
   }
