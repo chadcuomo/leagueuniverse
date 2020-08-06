@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
-body {
+html, body {
     background-color: #1d1d1d;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 h2 {
@@ -10,6 +13,7 @@ h2 {
     font-size: 60px;
     margin: auto;
 }
+
 
 /*Welcome Component*/
 .welcome-container {
@@ -96,7 +100,9 @@ h2 {
 
   /* Main Page */
   .mainpage-container {
+    padding-top: 3px;
     border: red solid 1px;
+    
   }
 
   /* Main Header */
@@ -110,8 +116,6 @@ h2 {
     align-items: center;
     justify-content: center;
   }
-
-  
 
   .mainheader-text {
     text-align: center;
@@ -160,13 +164,33 @@ h2 {
     
   }
 
+  /* Main Content */
+  .maincontent-container {
+    height: 60vh;
+    border: #cea212 double 8px;
+    background-color: white;
+  }
+
+  .maincontent-inner {
+    border: blue solid 1px;
+    margin: 15px 20px 15px 20px;
+    padding: 5px;
+  }
+
   @media screen and (max-width: 560px) {
     /*Main Header*/
-    .mainheader-container{
-      height: auto;
+    h2 {
+      font-size: 40px;
+      margin-bottom: -5px;
+      margin-top: -5px;
     }
 
     .search{
       width: 225px;
+      height: 30px;
+    }
+
+    .search-img {
+      width: 10px;
     }
   }
