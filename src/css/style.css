@@ -175,6 +175,8 @@ h2 {
     border: blue solid 1px;
     margin: 15px 20px 15px 20px;
     padding: 5px;
+    overflow: scroll;
+    height: 90%;
   }
 
   @media screen and (max-width: 560px) {

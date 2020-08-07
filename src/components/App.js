@@ -22,14 +22,13 @@ class App extends React.Component {
 
   componentDidMount() {
     this.fetchChamps()
-    
   }
 
   render() {
     return (
       <div className="main-container">
         <WelcomePage />
-        <MainPage />
+        <MainPage allChamps={this.state.allChamps}/>
       </div>
     );
   }
