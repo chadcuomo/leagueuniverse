@@ -179,6 +179,12 @@ h2 {
     height: 90%;
   }
 
+  /*Champion*/
+  .round-img {
+    border-radius: 50%;
+    width: 150px;
+  }
+
   @media screen and (max-width: 560px) {
     /*Main Header*/
     h2 {
