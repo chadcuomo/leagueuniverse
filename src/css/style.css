@@ -51,6 +51,7 @@ h2 {
     border-style: solid;
     border-width: 1px;
     padding: 3px 25px 3px 25px;
+    height: 30px;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -172,17 +173,50 @@ h2 {
   }
 
   .maincontent-inner {
-    border: blue solid 1px;
     margin: 15px 20px 15px 20px;
     padding: 5px;
     overflow: scroll;
+    overflow-x: hidden;
     height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   /*Champion*/
   .round-img {
     border-radius: 50%;
     width: 150px;
+  }
+
+  .champion-container {
+    width: 260px;
+    margin: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .champion-name {
+    width: 100%;
+    text-align: center;
+  }
+
+  .champion-img {
+    width: 100%;
+    text-align: center;
+    margin-top: -15px;
+  }
+
+  .champion-button {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  h3 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 23px;
   }
 
   @media screen and (max-width: 560px) {

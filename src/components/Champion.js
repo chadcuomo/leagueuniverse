@@ -1,4 +1,5 @@
 import React from 'react';
+import GreyButton from './GreyButton';
 
 class Champion extends React.Component {
   render() {
@@ -7,9 +8,14 @@ class Champion extends React.Component {
     const imgsrc = `https://ddragon.leagueoflegends.com/cdn/10.16.1/img/champion/${img}`;
     return (
       <div className="champion-container">
-        <div className="champion-inner">
+        <div className="champion-name">
           <h3>{name}</h3>
+        </div>
+        <div className="champion-img">
           <img src={imgsrc} alt={name} className="round-img" />
+        </div>
+        <div className="champion-button">
+          <GreyButton buttonText="More Info" />
         </div>
       </div>
     );

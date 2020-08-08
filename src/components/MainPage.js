@@ -6,7 +6,7 @@ class MainPage extends React.Component {
   render() {
     return (
       <div className="mainpage-container">
-        <MainHeader />
+        <MainHeader searchChange={this.props.searchChange} />
         <MainContent allChamps={this.props.allChamps} />
       </div>
     );

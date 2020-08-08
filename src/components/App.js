@@ -9,6 +9,7 @@ class App extends React.Component {
     super();
     this.state = {
       allChamps: {},
+      searchfield: ''
     };
   }
 
@@ -18,17 +19,28 @@ class App extends React.Component {
     const champs = await resp.json();
     allChamps = champs.data
     this.setState({ allChamps })
+    console.log(Object.keys(this.state.allChamps))
    }
 
   componentDidMount() {
     this.fetchChamps()
   }
 
+  onSearchChange = (event) => {
+    this.setState({ searchfield: event.target.value });
+  };
+
   render() {
+
+    
+
     return (
       <div className="main-container">
         <WelcomePage />
-        <MainPage allChamps={this.state.allChamps}/>
+        <MainPage 
+        allChamps={this.state.allChamps} 
+        searchChange={this.onSearchChange}
+        />
       </div>
     );
   }

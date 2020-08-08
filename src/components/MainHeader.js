@@ -1,4 +1,5 @@
 import React from 'react';
+import Searchbox from './Searchbox';
 
 class MainHeader extends React.Component {
   render() {
@@ -10,11 +11,7 @@ class MainHeader extends React.Component {
             <h2>Universe</h2>
           </div>
           <div className="mainheader-search">
-            <input
-              className="search"
-              placeholder="Search Champions"
-              type="search"
-            />
+            <Searchbox searchChange={this.props.searchChange} />
             <div className="search-img-ctn">
               <img
                 src="/images/search.png"
