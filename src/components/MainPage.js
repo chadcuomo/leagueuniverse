@@ -7,7 +7,10 @@ class MainPage extends React.Component {
     return (
       <div className="mainpage-container">
         <MainHeader searchChange={this.props.searchChange} />
-        <MainContent allChamps={this.props.allChamps} />
+        <MainContent
+          allChamps={this.props.allChamps}
+          searchfield={this.props.searchfield}
+        />
       </div>
     );
   }

@@ -3,10 +3,17 @@ import Champion from './Champion';
 
 class MainContent extends React.Component {
   render() {
+    const filteredChamps = Object.keys(this.props.allChamps).filter(
+      (filteredChamps) => {
+        return filteredChamps
+          .toLowerCase()
+          .includes(this.props.searchfield.toLowerCase());
+      }
+    );
     return (
       <div className="maincontent-container">
         <div className="maincontent-inner">
-          {Object.keys(this.props.allChamps).map((key) => (
+          {filteredChamps.map((key) => (
             <Champion
               key={key}
               index={key}

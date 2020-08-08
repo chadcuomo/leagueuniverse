@@ -19,7 +19,7 @@ class App extends React.Component {
     const champs = await resp.json();
     allChamps = champs.data
     this.setState({ allChamps })
-    console.log(Object.keys(this.state.allChamps))
+    
    }
 
   componentDidMount() {
@@ -28,6 +28,7 @@ class App extends React.Component {
 
   onSearchChange = (event) => {
     this.setState({ searchfield: event.target.value });
+    
   };
 
   render() {
@@ -40,6 +41,7 @@ class App extends React.Component {
         <MainPage 
         allChamps={this.state.allChamps} 
         searchChange={this.onSearchChange}
+        searchfield={this.state.searchfield}
         />
       </div>
     );
