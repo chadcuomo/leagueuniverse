@@ -102,8 +102,8 @@ h2 {
   /* Main Page */
   .mainpage-container {
     padding-top: 3px;
-    border: red solid 1px;
-    
+    transform: translateY(-120%);
+    position: absolute;
   }
 
   /* Main Header */
@@ -219,6 +219,27 @@ h2 {
     font-size: 23px;
   }
 
+  /*Champion Card*/
+  .championcard-container {
+    padding-top: 10px;
+    background: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+    height: 100vh;
+    border-color: #cea212;
+    border-style: double;
+    border-width: 8px;
+    box-sizing: border-box;
+  }
+
+  /*@media screen and (max-width: 850px) {
+    .championcard-container {
+      background-image: url("http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg");
+    }
+  }*/
+
   @media screen and (max-width: 560px) {
     /*Main Header*/
     h2 {
@@ -234,5 +255,15 @@ h2 {
 
     .search-img {
       width: 10px;
+    }
+
+    /*Champion Card*/
+    .championcard-container {
+      background: url(http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+      
     }
   }

@@ -1,8 +1,8 @@
 import React from 'react';
 import WelcomePage from './WelcomePage';
 import MainPage from './MainPage';
-
 import * as apiRoutes from '../API/api_routes';
+import ChampionCard from './ChampionCard';
 
 class App extends React.Component {
   constructor() {
@@ -43,6 +43,7 @@ class App extends React.Component {
         searchChange={this.onSearchChange}
         searchfield={this.state.searchfield}
         />
+        <ChampionCard />
       </div>
     );
   }
