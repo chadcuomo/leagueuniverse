@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 
 html, body {
     background-color: #1d1d1d;
@@ -9,6 +11,7 @@ html, body {
 
 h2 {
     font-family: "Staatliches", sans-serif;
+    font-weight: 100;
     color: #cea212;
     font-size: 60px;
     margin: auto;
@@ -46,6 +49,7 @@ h2 {
 .grey-button {
     background: #1d1d1d;
     font-family: "Staatliches", sans-serif;
+    font-weight: 100;
     color: #cea212;
     border-color: #cea212;
     border-style: solid;
@@ -217,11 +221,12 @@ h2 {
   h3 {
     font-family: "Staatliches", sans-serif;
     font-size: 23px;
+    font-weight: 100;
   }
 
   /*Champion Card*/
   .championcard-container {
-    padding-top: 10px;
+    
     background: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -232,13 +237,139 @@ h2 {
     border-style: double;
     border-width: 8px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
 
-  /*@media screen and (max-width: 850px) {
-    .championcard-container {
-      background-image: url("http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg");
-    }
-  }*/
+  .home-button {
+    border: green solid 1px;
+    margin-top: 10px;
+  }
+
+  .home-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    justify-content: center;
+    border: green 1px solid;
+    
+  }
+
+  .home-arrow {
+    width: 50px;
+    height: 50px;
+    border: #cea212 solid 6px;
+    border-radius: 50%;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 100;
+    color: #cea212;
+    font-size: 75px;
+    text-align: center;
+    line-height: 70px;
+    background-color: #0000;
+  }
+
+  .home {
+    background: none;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    color: #cea212;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 5px;
+  }
+
+  .full {
+    border: green solid 1px;
+    flex-grow: 4;
+  }
+
+  .championcard-title {
+    border: green solid 1px;
+    text-align: center;
+    margin-bottom: -10px;
+  }
+
+  .championcard-subtitle {
+    border: green solid 1px;
+    text-align: center;
+    margin-top: -5px;
+    padding-bottom: 10px;
+  }
+
+  h1 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 100;
+    color: #cea212;
+    font-size: 40px;
+    margin: auto;
+  }
+
+  .championcard-bio-button {
+    border: green solid 1px;
+    text-align: center;
+    margin-bottom: 5px;
+    
+  }
+
+  h4 {
+    font-family: "Roboto", sans-serif;
+    color: #cea212;
+    font-size: 18px;
+    margin: auto;
+  }
+
+  .bio-button {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 100;
+    color: #cea212;
+    font-size: 55px;
+    text-align: center;
+    line-height: auto;
+    height: 55px;
+    background: none;
+    border: none;
+    transform: rotate(180deg);
+  }
+
+  /*Champion Bio*/
+  .championbio-container {
+    border: 1px green solid;
+    display: flex;
+    padding-bottom: 75px;
+  }
+  
+  .left-button {
+    border: 1px green solid;
+    width: 10%;
+  }
+
+  .bio-container {
+    border: 1px solid green;
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bio-box {
+    width: 75%;
+    border: #cea212 solid 9px;
+    background-color: rgba(29, 29, 29, 75%);
+    text-align: center;
+  }
+
+  .bio-paragraph {
+    font-family: 'Robto', sans-serif;
+    font-size: 20px;
+    color: #C3B68C;
+    padding: 10px 35px 10px 35px;
+  }
+
+  .right-button {
+    border: 1px sollid green;
+    width: 10%;
+  }
 
   @media screen and (max-width: 560px) {
     /*Main Header*/
@@ -248,6 +379,35 @@ h2 {
       margin-top: -5px;
     }
 
+    h1 {
+      font-size: 32px;
+    }
+
+    /*Chamion Card*/
+    .home-arrow {
+      width: 40px;
+      height: 40px;
+      border: #cea212 solid 5px;
+      font-size: 55px;
+      line-height: 52px;
+    }
+  
+    .home {
+      font-size: 0;
+    }
+
+    .championcard-title {
+      margin: 0;
+    }
+
+    .championcard-subtitle {
+      padding-bottom: 5px;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+
     .search{
       width: 225px;
       height: 30px;
@@ -255,6 +415,10 @@ h2 {
 
     .search-img {
       width: 10px;
+    }
+
+    .bio-paragraph {
+      font-size: 14px;
     }
 
     /*Champion Card*/
