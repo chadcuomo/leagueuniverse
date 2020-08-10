@@ -337,12 +337,22 @@ h2 {
   .championbio-container {
     border: 1px green solid;
     display: flex;
-    padding-bottom: 75px;
   }
   
   .left-button {
     border: 1px green solid;
     width: 10%;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 100;
+    color: #cea212;
+    font-size: 55px;
+    text-align: center;
+    line-height: auto;
+    height: 55px;
+    background: none;
+    border: none;
+    transform: rotate(-90deg);
+    margin-left: 15px;
   }
 
   .bio-container {
@@ -369,6 +379,43 @@ h2 {
   .right-button {
     border: 1px sollid green;
     width: 10%;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 100;
+    color: #cea212;
+    font-size: 55px;
+    text-align: center;
+    line-height: auto;
+    height: 55px;
+    background: none;
+    border: none;
+    transform: rotate(90deg);
+    margin-right: 15px;
+  }
+
+  .circle-container {
+    border: green 1px solid;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .active-circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #cea212;
+    border: #cea212 2px solid;
+    margin: 5px;
+  }
+
+  .inactive-circle {
+    width: 13px;
+    height: 13px;
+    border: 2px solid #cea212;
+    border-radius: 50%;
+    background-color: #0000;
+    margin: 5px;
   }
 
   @media screen and (max-width: 560px) {
@@ -418,9 +465,29 @@ h2 {
     }
 
     .bio-paragraph {
-      font-size: 14px;
+      font-size: 12px;
+      padding: 10px;
     }
 
+    .bio-box {
+      border:  #cea212 solid 5px;
+    }
+
+    .circle-container {
+      margin-bottom: 25px;
+    }
+
+    .active-circle {
+      width: 10px;
+      height: 10px;
+    }
+  
+    .inactive-circle {
+      width: 10px;
+      height: 10px;
+    }
+
+   
     /*Champion Card*/
     .championcard-container {
       background: url(http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg) no-repeat center center fixed; 
@@ -431,3 +498,13 @@ h2 {
       
     }
   }
+
+  @media screen and (max-width: 320px) {
+    .bio-paragraph {
+      font-size: 10px;
+    }
+
+    
+  }
+
+  
