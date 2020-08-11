@@ -1,5 +1,5 @@
 import React from 'react';
-import ChampionBio from './ChampionBio';
+import ChampionInfo from './ChampionInfo';
 
 class ChampionCard extends React.Component {
   render() {
@@ -21,9 +21,13 @@ class ChampionCard extends React.Component {
         <div className="empty-div2 full"></div>
         <div className="championcard-bio-button">
           <h4>Bio</h4>
-          <button className="bio-button">^</button>
+          <img
+            src="/images/arrow.png"
+            alt="arrow"
+            className="arrow-button down"
+          />
         </div>
-        <ChampionBio />
+        <ChampionInfo />
       </div>
     );
   }
