@@ -436,7 +436,20 @@ h2 {
     padding: 10px 35px 10px 35px;
   }
 
-  @media screen and (max-width: 1100px) {
+  .test {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+  }
+
+  .test2 {
+    position: relative;
+    width: 100%;
+  }
+
+ 
+
+ @media screen and (max-width: 1160px) {
     .bio-box, .tips-box {
       width: 75%;
     }
@@ -550,4 +563,34 @@ h2 {
     
   }
 
+  @media screen and (max-height: 600px) {
+    .bio-paragraph, .tips-paragraph {
+      font-size: 16px;
+    }
+
+    .bio-box, .tips-box {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-height:583px) {
+    .bio-paragraph, .tips-paragraph {
+      font-size: 14px;
+      padding: 5px;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 5px;
+      margin-top: -50px;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .bio-box, .tips-box {
+      border:  #cea212 solid 5px;
+    }
+  }
   
