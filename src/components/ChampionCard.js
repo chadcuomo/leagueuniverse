@@ -7,7 +7,7 @@ class ChampionCard extends React.Component {
       <div className="championcard-container">
         <div className="home-button">
           <div className="home-button-container">
-            <button className="home-arrow">^</button>
+            <button className="home-arrow"></button>
             <button className="home">Home</button>
           </div>
         </div>
@@ -21,11 +21,7 @@ class ChampionCard extends React.Component {
         <div className="empty-div2 full"></div>
         <div className="championcard-bio-button">
           <h4>Bio</h4>
-          <img
-            src="/images/arrow.png"
-            alt="arrow"
-            className="arrow-button down"
-          />
+          <button className="arrow-button down" />
         </div>
         <ChampionInfo />
       </div>
