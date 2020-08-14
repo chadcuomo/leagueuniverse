@@ -6,6 +6,7 @@ html, body {
     background-color: #1d1d1d;
     margin: 0;
     overflow: hidden;
+    
 }
 
 h2 {
@@ -241,10 +242,10 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 90%;
+
   }
 
   .home-button {
-    border: green solid 1px;
     margin-top: 10px;
   }
 
@@ -253,8 +254,6 @@ h2 {
     flex-wrap: wrap;
     width: 100px;
     justify-content: center;
-    border: green 1px solid;
-    
   }
 
   .home-arrow {
@@ -286,18 +285,15 @@ h2 {
   }
 
   .full {
-    border: green solid 1px;
     flex-grow: 4;
   }
 
   .championcard-title {
-    border: green solid 1px;
     text-align: center;
     margin-bottom: -10px;
   }
 
   .championcard-subtitle {
-    border: green solid 1px;
     text-align: center;
     margin-top: -5px;
     padding-bottom: 10px;
@@ -346,9 +342,8 @@ h2 {
   /*Champion Info*/
   .championinfo-container {
     border: 1px green solid;
-    
     height: 50vh;
-    background-color: rgba(36, 36, 36, 0.815);
+    background-color: rgba(24, 24, 24, 0.815);
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
     justify-content: center;
@@ -406,6 +401,8 @@ h2 {
     transform: rotate(180deg);
   }
 
+  
+
   /* Champion Bio */
   .bio-box {
     padding-left: 30px;
@@ -416,7 +413,31 @@ h2 {
     font-size: 24px;
     line-height: 35px;
     overflow: scroll;
-    height: 100%;
+    overflow-x: hidden;
+    height: 80%;
+  }
+  
+  p {
+    padding-bottom: 25px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2b2a2a;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(59, 59, 59);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(59, 59, 59);
   }
   
   
@@ -465,9 +486,17 @@ h2 {
       width: 10px;
     }
 
+    /*Champion Info*/
+    .championinfo-container {
+      height: 65vh;
+    }
+
    
 
-    
+    /* Champion Bio */
+    .bio-box {
+      font-size: 18px;
+    }
 
     
 
@@ -482,8 +511,18 @@ h2 {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;   
+    background-size: cover; 
+    border-style: solid;
+    border-width: 5px;
+    width: 100%;
       
+    }
+  }
+
+  @media screen and (max-width : 450px) {
+    .bio-box {
+      font-size: 16px;
+      line-height: 25px;
     }
   }
 

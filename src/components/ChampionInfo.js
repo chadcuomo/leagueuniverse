@@ -1,6 +1,5 @@
 import React from 'react';
 import ChampionBio from './ChampionBio';
-import ChampionTips from './ChampionTips';
 
 class ChampionInfo extends React.Component {
   render() {
@@ -21,6 +20,7 @@ class ChampionInfo extends React.Component {
             <button className="arrow-button" />
           </div>
         </div>
+        <div className="bottom-container"></div>
       </div>
     );
   }
