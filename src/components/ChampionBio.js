@@ -3,8 +3,8 @@ import React from 'react';
 class ChampionBio extends React.Component {
   render() {
     return (
-      <div className="bio-box">
-        <p className="bio-paragraph">
+      <div className="info-box">
+        <p className="info-paragraph">
           Once honored defenders of Shurima against the Void, Aatrox and his
           brethren would eventually become an even greater threat to Runeterra,
           and were defeated only by cunning mortal sorcery. But after centuries

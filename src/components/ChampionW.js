@@ -3,16 +3,12 @@ import React from 'react';
 class ChampionW extends React.Component {
   render() {
     return (
-      <div className="test">
-        <p className="tips-paragraph">
-          Once honored defenders of Shurima against the Void, Aatrox and his
-          brethren would eventually become an even greater threat to Runeterra,
-          and were defeated only by cunning mortal sorcery. But after centuries
-          of imprisonment, Aatrox was the first to find freedom once more,
-          corrupting and transforming those foolish enough to try and wield the
-          magical weapon that contained his essence. Now, with stolen flesh, he
-          walks Runeterra in a brutal approximation of his previous form,
-          seeking an apocalyptic and long overdue vengeance.
+      <div className="info-box">
+        <h4>Infernal Chains</h4>
+        <p className="info-paragraph">
+          Aatrox smashes the ground, dealing damage to the first enemy hit.
+          Champions and large monsters have to leave the impact area quickly or
+          they will be dragged to the center and take the damage again."
         </p>
       </div>
     );
