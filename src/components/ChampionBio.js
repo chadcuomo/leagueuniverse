@@ -4,6 +4,7 @@ class ChampionBio extends React.Component {
   render() {
     return (
       <div className="info-box">
+        <h4 className="info-h4">Bio</h4>
         <p className="info-paragraph">
           Once honored defenders of Shurima against the Void, Aatrox and his
           brethren would eventually become an even greater threat to Runeterra,

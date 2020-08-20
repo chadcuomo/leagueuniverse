@@ -4,7 +4,7 @@ class ChampionQ extends React.Component {
   render() {
     return (
       <div className="info-box">
-        <h4>The Darkin Blade</h4>
+        <h4 className="info-h4">The Darkin Blade</h4>
         <p className="info-paragraph">
           "Aatrox slams his greatsword down, dealing physical damage. He can
           swing three times, each with a different area of effect."

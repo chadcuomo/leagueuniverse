@@ -5,7 +5,7 @@ import ChampionQ from './ChampionQ';
 import ChampionW from './ChampionW';
 import ChampionE from './ChampionE';
 import ChampionR from './ChampionR';
-import ChampionCard from './ChampionCard';
+
 
 const cards = [
   <ChampionBio />,
@@ -20,28 +20,37 @@ class ChampionInfo extends React.Component {
   constructor() {
     super();
     this.state = {
-      index: 3,
+      index: 0,
     };
+  }
+
+  nextCard = () => {
+     let index = this.state.index;
+     
+     index = (index + 1) % cards.length;
+     this.setState({ index });
+     
+  }
+
+  prevCard = () => {
+    let index = this.state.index;
+    index = (index + cards.length - 1) % cards.length;
+    this.setState({ index });
   }
 
   render() {
     return (
       <div className="championinfo-container">
-        <div className="circles-container">
-          <div className="active-circle"></div>
-          <div className="inactive-circle"></div>
-        </div>
         <div className="champion-details-container">
           <div className="arrow-container">
-            <button className="arrow-button left" />
+            <button className="arrow-button left" onClick={this.prevCard} />
           </div>
           <div className="champion-details">{cards[this.state.index]}</div>
           <div className="arrow-container">
-            <button className="arrow-button" />
+            <button className="arrow-button" onClick={this.nextCard} />
           </div>
         </div>
         <div className="bottom-container"></div>
-        {console.log(cards)}
       </div>
     );
   }

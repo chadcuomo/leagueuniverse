@@ -4,7 +4,7 @@ class ChampionW extends React.Component {
   render() {
     return (
       <div className="info-box">
-        <h4>Infernal Chains</h4>
+        <h4 className="info-h4">Infernal Chains</h4>
         <p className="info-paragraph">
           Aatrox smashes the ground, dealing damage to the first enemy hit.
           Champions and large monsters have to leave the impact area quickly or

@@ -20,7 +20,7 @@ class ChampionCard extends React.Component {
         </div>
         <div className="empty-div2 full"></div>
         <div className="championcard-bio-button">
-          <h4>Bio</h4>
+          <h4>Champion Info</h4>
           <button className="arrow-button down" />
         </div>
         <ChampionInfo />
