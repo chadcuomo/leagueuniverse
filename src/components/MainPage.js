@@ -10,6 +10,7 @@ class MainPage extends React.Component {
         <MainContent
           allChamps={this.props.allChamps}
           searchfield={this.props.searchfield}
+          getChampName={this.props.getChampName}
         />
       </div>
     );

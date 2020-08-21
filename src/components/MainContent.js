@@ -18,6 +18,7 @@ class MainContent extends React.Component {
               key={key}
               index={key}
               details={this.props.allChamps[key]}
+              getChampName={this.props.getChampName}
             />
           ))}
         </div>

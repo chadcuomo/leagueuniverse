@@ -1,5 +1,4 @@
 import React from 'react';
-import GreyButton from './GreyButton';
 
 class Champion extends React.Component {
   render() {
@@ -15,7 +14,9 @@ class Champion extends React.Component {
           <img src={imgsrc} alt={name} className="round-img" />
         </div>
         <div className="champion-button">
-          <GreyButton buttonText="More Info" />
+          <button onClick={() => this.props.getChampName(this.props.index)}>
+            More Info
+          </button>
         </div>
       </div>
     );

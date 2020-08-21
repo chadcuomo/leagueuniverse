@@ -106,7 +106,7 @@ h2 {
   /* Main Page */
   .mainpage-container {
     padding-top: 3px;
-    transform: translateY(-120%);
+    transform: translateY(0%);
     position: absolute;
   }
 
@@ -242,7 +242,7 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 90%;
-
+    transform: translateX(-120%);
   }
 
   .home-button {
@@ -282,6 +282,11 @@ h2 {
     font-size: 18px;
     font-weight: 700;
     padding-top: 5px;
+  }
+
+  .home-arrow:hover {
+    border-color: #dfc983;
+    background-image: url("/images/arrowhover.png");
   }
 
   .full {
@@ -325,6 +330,10 @@ h2 {
     height: 25px;
     background-color: #0000;
     border: none;
+  }
+
+  .arrow-button:hover {
+    background-image: url("/images/arrowhover.png");
   }
 
   .down {

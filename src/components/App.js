@@ -9,7 +9,8 @@ class App extends React.Component {
     super();
     this.state = {
       allChamps: {},
-      searchfield: ''
+      searchfield: '',
+      singleChamp: {}
     };
   }
 
@@ -35,8 +36,16 @@ class App extends React.Component {
 
   onSearchChange = (event) => {
     this.setState({ searchfield: event.target.value });
-    
   };
+
+  getChampName = async (key) => {
+    let singleChamp = { ...this.state.singleChamp };
+    const resp = await fetch(`http://ddragon.leagueoflegends.com/cdn/10.16.1/data/en_US/champion/${key}.json`);
+    const champ = await resp.json();
+    singleChamp = champ.data
+    this.setState({ singleChamp })
+    console.log(singleChamp)    
+  }
 
   render() {
 
@@ -49,6 +58,7 @@ class App extends React.Component {
         allChamps={this.state.allChamps} 
         searchChange={this.onSearchChange}
         searchfield={this.state.searchfield}
+        getChampName={this.getChampName}
         />
         <ChampionCard />
       </div>
