@@ -272,6 +272,7 @@ h2 {
     background-position-x: 10px;
     background-color: #0000;
     transform: rotate(-90deg);
+    text-shadow: 1px 1px 6px black;
   }
 
   .home {
@@ -283,6 +284,7 @@ h2 {
     font-size: 18px;
     font-weight: 700;
     padding-top: 5px;
+    text-shadow: 1px 1px 6px black;
   }
 
   .home-arrow:hover {
@@ -300,10 +302,15 @@ h2 {
     margin-top: -35px;
   }
 
+  .champion-title {
+    text-shadow: 1px 1px 6px black;
+  }
+
   .championcard-subtitle {
     text-align: center;
     margin-top: -5px;
     padding-bottom: 10px;
+    text-shadow: 1px 1px 6px black;
   }
 
   h1 {
@@ -331,6 +338,7 @@ h2 {
     height: 25px;
     background-color: #0000;
     border: none;
+    text-shadow: 1px 1px 6px black;
   }
 
   .arrow-button:hover {
@@ -347,6 +355,7 @@ h2 {
     font-size: 18px;
     margin: auto;
     padding-bottom: 5px;
+    text-shadow: 1px 1px 6px black;
   }
 
   /*Champion Info*/
@@ -432,6 +441,7 @@ h2 {
   
   p {
     padding: 25px;
+    margin-bottom: -15px;
   }
 
   .info-h4 {

@@ -19,7 +19,7 @@ class ChampionCard extends React.Component {
         </div>
         <div className="empty-div"></div>
         <div className="championcard-title">
-          <h2>{name}</h2>
+          <h2 className="champion-title">{name}</h2>
         </div>
         <div className="championcard-subtitle">
           <h1>{title}</h1>
