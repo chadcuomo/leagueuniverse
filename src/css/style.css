@@ -5,7 +5,7 @@
 html, body {
     background-color: #1d1d1d;
     margin: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     
 }
 
@@ -107,7 +107,7 @@ h2 {
   .mainpage-container {
     padding-top: 3px;
     transform: translateY(0%);
-    position: absolute;
+    /*position: absolute;*/
   }
 
   /* Main Header */
@@ -227,7 +227,7 @@ h2 {
   /*Champion Card*/
   .championcard-container {
     margin: auto;
-    background: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg) no-repeat center center fixed; 
+    /*background: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg) no-repeat center center fixed;*/ 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -242,7 +242,8 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 90%;
-    transform: translateX(-120%);
+    display: block;
+    /*transform: translateX(-120%);*/
   }
 
   .home-button {
@@ -406,6 +407,11 @@ h2 {
 
   .left {
     transform: rotate(180deg);
+  }
+
+  .ability-img {
+    margin-top: 35px;
+    margin-bottom: -65px;
   }
 
   

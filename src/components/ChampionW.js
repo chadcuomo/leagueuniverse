@@ -2,14 +2,15 @@ import React from 'react';
 
 class ChampionW extends React.Component {
   render() {
+    const { spells } = this.props.details;
+    const spellsObj = spells[Object.keys(spells)[1]];
+    const img = `http://ddragon.leagueoflegends.com/cdn/10.16.1/img/spell/${spellsObj.id}.png`;
+
     return (
       <div className="info-box">
-        <h4 className="info-h4">Infernal Chains</h4>
-        <p className="info-paragraph">
-          Aatrox smashes the ground, dealing damage to the first enemy hit.
-          Champions and large monsters have to leave the impact area quickly or
-          they will be dragged to the center and take the damage again."
-        </p>
+        <h4 className="info-h4">{spellsObj.name}</h4>
+        <img src={img} alt="championq" className="ability-img" />
+        <p className="info-paragraph">{spellsObj.description}</p>
       </div>
     );
   }

@@ -8,7 +8,7 @@ import ChampionR from './ChampionR';
 
 
 const cards = [
-  <ChampionBio />,
+  <ChampionBio  />,
   <ChampionTips />,
   <ChampionQ />,
   <ChampionW />,
@@ -39,18 +39,27 @@ class ChampionInfo extends React.Component {
   }
 
   render() {
+    const cards = [
+      <ChampionBio details={this.props.details}  />,
+      <ChampionTips details={this.props.details} />,
+      <ChampionQ details={this.props.details} />,
+      <ChampionW details={this.props.details} />,
+      <ChampionE details={this.props.details} />,
+      <ChampionR details={this.props.details} />,
+    ];
     return (
       <div className="championinfo-container">
         <div className="champion-details-container">
           <div className="arrow-container">
             <button className="arrow-button left" onClick={this.prevCard} />
           </div>
-          <div className="champion-details">{cards[this.state.index]}</div>
+          <div className="champion-details">{cards[this.state.index] }</div>
           <div className="arrow-container">
             <button className="arrow-button" onClick={this.nextCard} />
           </div>
         </div>
         <div className="bottom-container"></div>
+        {console.log(this.props.details)}
       </div>
     );
   }

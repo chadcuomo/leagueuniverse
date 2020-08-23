@@ -60,7 +60,13 @@ class App extends React.Component {
         searchfield={this.state.searchfield}
         getChampName={this.getChampName}
         />
-        <ChampionCard />
+        {Object.keys(this.state.singleChamp).map(key =>
+          <ChampionCard
+            key={key}
+            index={key}
+            details={this.state.singleChamp[key]}
+          />
+        )}
       </div>
     );
   }

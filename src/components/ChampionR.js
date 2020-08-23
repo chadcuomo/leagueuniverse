@@ -2,14 +2,15 @@ import React from 'react';
 
 class ChampionR extends React.Component {
   render() {
+    const { spells } = this.props.details;
+    const spellsObj = spells[Object.keys(spells)[3]];
+    const img = `http://ddragon.leagueoflegends.com/cdn/10.16.1/img/spell/${spellsObj.id}.png`;
+
     return (
       <div className="info-box">
-        <h4 className="info-h4">World Ender</h4>
-        <p className="info-paragraph">
-          "Aatrox unleashes his demonic form, fearing nearby enemy minions and
-          gaining attack damage, increased healing, and movement speed. If he
-          gets a takedown, this effect is extended."
-        </p>
+        <h4 className="info-h4">{spellsObj.name}</h4>
+        <img src={img} alt="championq" className="ability-img" />
+        <p className="info-paragraph">{spellsObj.description}</p>
       </div>
     );
   }
