@@ -1,5 +1,4 @@
 import React from 'react';
-import WelcomePage from './WelcomePage';
 import MainPage from './MainPage';
 import * as apiRoutes from '../API/api_routes';
 import ChampionCard from './ChampionCard';
@@ -40,11 +39,13 @@ class App extends React.Component {
 
   getChampName = async (key) => {
     let singleChamp = { ...this.state.singleChamp };
+    const mainPage = document.querySelector('.mainpage-container');
     const resp = await fetch(`http://ddragon.leagueoflegends.com/cdn/10.16.1/data/en_US/champion/${key}.json`);
     const champ = await resp.json();
-    singleChamp = champ.data
-    this.setState({ singleChamp })
-    console.log(singleChamp)    
+    singleChamp = champ.data;
+    this.setState({ singleChamp });
+    console.log(singleChamp);
+    mainPage.classList.add('up');   
   }
 
   render() {
@@ -53,7 +54,6 @@ class App extends React.Component {
 
     return (
       <div className="main-container">
-        <WelcomePage />
         <MainPage 
         allChamps={this.state.allChamps} 
         searchChange={this.onSearchChange}

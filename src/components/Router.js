@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import WelcomePage from './WelcomePage';
-import MainPage from './MainPage';
+import App from './App';
 
 const Router = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={WelcomePage} />
-      <Route path="/mainpage" component={MainPage} />
+      <Route path="/mainpage" component={App} />
     </Switch>
   </BrowserRouter>
 );

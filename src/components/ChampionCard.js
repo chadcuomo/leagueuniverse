@@ -2,6 +2,11 @@ import React from 'react';
 import ChampionInfo from './ChampionInfo';
 
 class ChampionCard extends React.Component {
+
+  goHome = () => {
+    const mainPage = document.querySelector('.mainpage-container');
+    mainPage.classList.remove('up');
+  }
   render() {
     const { name, id, title } = this.props.details;
     return (
@@ -13,8 +18,8 @@ class ChampionCard extends React.Component {
       >
         <div className="home-button">
           <div className="home-button-container">
-            <button className="home-arrow"></button>
-            <button className="home">Home</button>
+            <button className="home-arrow" onClick={this.goHome}></button>
+            <button className="home" onClick={this.goHome}>Home</button>
           </div>
         </div>
         <div className="empty-div"></div>

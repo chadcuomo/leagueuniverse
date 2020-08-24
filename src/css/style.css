@@ -5,7 +5,7 @@
 html, body {
     background-color: #1d1d1d;
     margin: 0;
-    /*overflow: hidden;*/
+    overflow: hidden;
     
 }
 
@@ -24,15 +24,14 @@ h2 {
     background-image: url("/images/league-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 96vh;
+    height: 100vh;
     border-color: #cea212;
-    border-style: double;
+    border-style: solid;
     border-width: 8px;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    transform: translateY(-120%);
-    position: absolute;
+    
 }
 
 .center-container {
@@ -105,18 +104,20 @@ h2 {
 
   /* Main Page */
   .mainpage-container {
-    padding-top: 3px;
-    transform: translateY(0%);
-    /*position: absolute;*/
+    height: 100vh;
+    width: 100%;
   }
+
+  
 
   /* Main Header */
   .mainheader-container {
     background-image: url("/images/league-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border: #cea212 double 8px;
-    height: 35vh;
+    border: #cea212 solid 8px;
+    border-bottom: 4px;
+    height: 35%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,8 +172,8 @@ h2 {
 
   /* Main Content */
   .maincontent-container {
-    height: 60vh;
-    border: #cea212 double 8px;
+    height: 62%;
+    border: #cea212 solid 8px;
     background-color: white;
   }
 
@@ -234,7 +235,7 @@ h2 {
     background-size: cover;   
     height: 100vh;
     border-color: #cea212;
-    border-style: double;
+    border-style: solid;
     border-width: 8px;
     box-sizing: border-box;
     border-top: none;
@@ -242,8 +243,6 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 90%;
-    display: block;
-    /*transform: translateX(-120%);*/
   }
 
   .home-button {
@@ -465,6 +464,25 @@ h2 {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(59, 59, 59);
+  }
+
+  /*Animations*/
+  .up {
+    transition-timing-function: ease-out;
+    transition: 1s;
+    transform: translateY(-120%);
+    position: absolute;
+  }
+
+  .championcard-up {
+    transition-timing-function: ease-out;
+    transition: 1s;
+    transform: translateY(0);
+    
+  }
+
+  .championcard-down {
+    transform: translateY(120%);
   }
 
 @media screen and (max-width: 978px) {
