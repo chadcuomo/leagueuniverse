@@ -485,6 +485,10 @@ h2 {
     transform: translateY(120%);
   }
 
+  .svg-title path:nth-child(2){
+    stroke-dasharray: 20px;
+}
+
 @media screen and (max-width: 978px) {
     /* Champion Bio */
     .info-box {
