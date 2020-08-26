@@ -9,6 +9,7 @@ class MainHeader extends React.Component {
           <div className="mainheader-text">
             <h2>League of Legends</h2>
             <h2>Universe</h2>
+            <h1>League of Legends Universe</h1>
           </div>
           <div className="mainheader-search">
             <Searchbox searchChange={this.props.searchChange} />

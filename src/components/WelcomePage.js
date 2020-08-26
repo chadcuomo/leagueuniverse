@@ -1,5 +1,6 @@
 import React from 'react';
 import SVGTitle from './SVGTitle';
+import SVGTitleSmall from './SVGTitleSmall';
 
 
 
@@ -8,16 +9,7 @@ class WelcomePage extends React.Component {
     this.props.history.push(`/mainpage`);
   }
 
-  getPath = () => {
-    const logo = document.querySelectorAll('.svg-title path');
-    for(let i = 0; i< logo.length; i++) {
-      console.log(`Leter ${i} is ${logo[i].getTotalLength()}`);
-    }
-  }
-
-  componentDidMount() {
-    this.getPath();
-  }
+  
 
   render() {
     
@@ -26,6 +18,8 @@ class WelcomePage extends React.Component {
         <div className="center-container">
           <div className="center-text">
             <SVGTitle />
+            <SVGTitleSmall />
+            <h2 classname="welcome-text">Welcome To The League Of Legends Universe</h2>
           </div>
           <div className="center-button">
             <button
