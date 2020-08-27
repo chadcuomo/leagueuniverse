@@ -1,14 +1,23 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import WelcomePage from './WelcomePage';
 import App from './App';
 
 const Router = () => (
   <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={WelcomePage} />
-      <Route path="/mainpage" component={App} />
-    </Switch>
+    <Route
+      render={({ location }) => (
+        <TransitionGroup>
+          <CSSTransition key={location.key} timeout={5500} classNames="fade">
+            <Switch location={location}>
+              <Route exact path="/" component={WelcomePage} />
+              <Route path="/mainpage" component={App} />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
+      )}
+    />
   </BrowserRouter>
 );
 

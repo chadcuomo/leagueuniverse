@@ -19,7 +19,7 @@ class WelcomePage extends React.Component {
           <div className="center-text">
             <SVGTitle />
             <SVGTitleSmall />
-            <h2 classname="welcome-text">Welcome To The League Of Legends Universe</h2>
+            <h2 className="welcome-text">Welcome To The League Of Legends Universe</h2>
           </div>
           <div className="center-button">
             <button
