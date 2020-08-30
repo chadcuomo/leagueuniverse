@@ -4,6 +4,7 @@ import SVGTitleSmall from './SVGTitleSmall';
 
 
 
+
 class WelcomePage extends React.Component {
   goToMainPage = () => {
     this.props.history.push(`/mainpage`);

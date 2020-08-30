@@ -9,7 +9,7 @@ const Router = () => (
     <Route
       render={({ location }) => (
         <TransitionGroup>
-          <CSSTransition key={location.key} timeout={5500} classNames="fade">
+          <CSSTransition key={location.key} timeout={1000} classNames="fade">
             <Switch location={location}>
               <Route exact path="/" component={WelcomePage} />
               <Route path="/mainpage" component={App} />

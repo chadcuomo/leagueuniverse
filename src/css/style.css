@@ -298,7 +298,7 @@ h2 {
   }
 
   .full {
-    flex-grow: 4;
+    flex-grow: 2;
   }
 
   .championcard-title {
@@ -350,8 +350,8 @@ h2 {
     background-image: url("/images/arrowhover.png");
   }
 
-  .down {
-    transform: rotate(90deg);
+  .up {
+    transform: rotate(-90deg);
   }
 
   h4 {
@@ -365,7 +365,8 @@ h2 {
 
   /*Champion Info*/
   .championinfo-container {
-    height: 50vh;
+    height: 0;
+    transform: translateY(120%);
     background-color: rgba(39, 39, 39, 0.815);
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
@@ -472,24 +473,6 @@ h2 {
     background: rgb(59, 59, 59);
   }
 
-  /*Animations*/
-  .up {
-    transition-timing-function: ease-out;
-    transition: 1s;
-    transform: translateY(-120%);
-    position: absolute;
-  }
-
-  .championcard-up {
-    transition-timing-function: ease-out;
-    transition: 1s;
-    transform: translateY(0);
-    
-  }
-
-  .championcard-down {
-    transform: translateY(120%);
-  }
 
 /* Router Animation  */
   .fade-appear
@@ -501,7 +484,7 @@ h2 {
   .fade-appear-active
   .fade-enter.fade-enter-active {
     opacity: 1;
-    transition: opacity 3000ms linear 1500ms;
+    transition: opacity 1000ms linear 1500ms;
     
   }
 
@@ -511,7 +494,7 @@ h2 {
 
   .fade-exit.fade-exit-active {
     opacity: 0;
-    transition: opacity 1500ms linear;
+    transition: opacity 1000ms linear;
   }
 
   

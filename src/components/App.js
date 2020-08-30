@@ -2,6 +2,7 @@ import React from 'react';
 import MainPage from './MainPage';
 import * as apiRoutes from '../API/api_routes';
 import ChampionCard from './ChampionCard';
+import { gsap } from 'gsap';
 
 class App extends React.Component {
   constructor() {
@@ -39,13 +40,20 @@ class App extends React.Component {
 
   getChampName = async (key) => {
     let singleChamp = { ...this.state.singleChamp };
-    const mainPage = document.querySelector('.mainpage-container');
     const resp = await fetch(`http://ddragon.leagueoflegends.com/cdn/10.16.1/data/en_US/champion/${key}.json`);
     const champ = await resp.json();
     singleChamp = champ.data;
     this.setState({ singleChamp });
     console.log(singleChamp);
-    mainPage.classList.add('up');   
+    gsap.to('.mainpage-container', {
+      duration: 1,
+      y: -1000,
+      
+    });
+    gsap.from('.championcard-container', {
+      duration: 1,
+      y: 1000,
+    })
   }
 
   render() {
