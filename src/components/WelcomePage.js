@@ -1,13 +1,21 @@
 import React from 'react';
 import SVGTitle from './SVGTitle';
 import SVGTitleSmall from './SVGTitleSmall';
-
+import { gsap } from 'gsap'
 
 
 
 class WelcomePage extends React.Component {
   goToMainPage = () => {
     this.props.history.push(`/mainpage`);
+  }
+
+  componentDidMount() {
+    gsap.from('.center-button', {
+      duration: 1,
+      opacity: 0,
+      delay: 4.5,
+    });
   }
 
   

@@ -41,8 +41,8 @@ class App extends React.Component {
     singleChamp = champ.data;
     this.setState({ singleChamp });
     gsap.to('.mainpage-container', {
-      duration: 1,
-      y: -1000,
+      duration: 1.25,
+      y: -1200,
       
     });
     gsap.from('.championcard-container', {

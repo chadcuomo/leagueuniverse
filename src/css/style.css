@@ -233,7 +233,7 @@ h2 {
   /*Champion Card*/
   .championcard-container {
     margin: auto;
-    /*background: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg) no-repeat center center fixed;*/ 
+    background: no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -559,6 +559,10 @@ h2 {
     }
 
     /*Champion Info*/
+    .ability-img {
+      margin-bottom: -25px;
+      
+    }
     
 
    /*Champion Card*/

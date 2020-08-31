@@ -17,6 +17,9 @@ const cards = [
   <ChampionR />,
 ];
 
+let touchstartX = 0;
+let touchendX = 0;
+
 class ChampionInfo extends React.Component {
   constructor() {
     super();
@@ -27,7 +30,6 @@ class ChampionInfo extends React.Component {
 
   nextCard = () => {
      let index = this.state.index;
-     
      index = (index + 1) % cards.length;
      this.setState({ index });
      gsap.fromTo(".champion-details", {opacity: 0, x: 170}, {opacity: 1, x: 0, duration: 1.25});
@@ -40,9 +42,34 @@ class ChampionInfo extends React.Component {
     gsap.fromTo(".champion-details", {opacity: 0, x: -170}, {opacity: 1, x: 0, duration: 1.25});
   }
 
-  swipeLeft = (e) => {
-    console.log(e.touches);
+  handleGesture = () => {
+    if (touchendX < (touchstartX - 30) ) {
+      let index = this.state.index;
+      index = (index + 1) % cards.length;
+      this.setState({ index });
+      gsap.fromTo(".champion-details", {opacity: 0, x: 170}, {opacity: 1, x: 0, duration: 1.25});
+      console.log('Swiped left');
+    }
+    
+    if (touchendX > (touchstartX + 30) ) {
+      let index = this.state.index;
+      index = (index + cards.length - 1) % cards.length;
+      this.setState({ index });
+      gsap.fromTo(".champion-details", {opacity: 0, x: -170}, {opacity: 1, x: 0, duration: 1.25});
+      console.log('Swiped right');
+    }
   }
+
+  swipeStart = (e) => {
+    touchstartX = e.changedTouches[0].screenX;
+  }
+
+  swipeEnd = (e) => {
+    touchendX = e.changedTouches[0].screenX;
+    this.handleGesture();
+  }
+
+  
 
 
   render() {
@@ -60,7 +87,7 @@ class ChampionInfo extends React.Component {
           <div className="arrow-container">
             <button className="arrow-button left" onClick={this.prevCard} />
           </div>
-          <div className="champion-details" onTouchStart={this.swipeLeft}>{cards[this.state.index] }</div>
+          <div className="champion-details" onTouchStart={this.swipeStart} onTouchEnd={this.swipeEnd}>{cards[this.state.index] }</div>
           <div className="arrow-container">
             <button className="arrow-button" onClick={this.nextCard} />
           </div>
