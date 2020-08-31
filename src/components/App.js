@@ -27,11 +27,7 @@ class App extends React.Component {
     this.fetchChamps()
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-    window.addEventListener('resize', () => {
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-      console.log(vh);
-    });
+    document.cookie = 'cookie2=value2; SameSite=None; Secure';
   }
 
   onSearchChange = (event) => {
@@ -44,7 +40,6 @@ class App extends React.Component {
     const champ = await resp.json();
     singleChamp = champ.data;
     this.setState({ singleChamp });
-    console.log(singleChamp);
     gsap.to('.mainpage-container', {
       duration: 1,
       y: -1000,
@@ -56,9 +51,23 @@ class App extends React.Component {
     })
   }
 
-  render() {
+  goHome = (key) => {
+    let singleChamp = { ...this.state.singleChamp };
+    delete singleChamp[key];
+    gsap.to('.mainpage-container', {
+      duration: 1,
+      y: 0,
+      
+    });
+    gsap.to('.championcard-container', {
+      duration: 1,
+      y: 1000,
+    })
+    this.setState({ singleChamp })
+  }
 
-    
+
+  render() {
 
     return (
       <div className="main-container">
@@ -73,6 +82,7 @@ class App extends React.Component {
             key={key}
             index={key}
             details={this.state.singleChamp[key]}
+            goHome={this.goHome}
           />
         )}
       </div>

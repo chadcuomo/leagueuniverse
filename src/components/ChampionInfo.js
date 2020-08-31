@@ -5,6 +5,7 @@ import ChampionQ from './ChampionQ';
 import ChampionW from './ChampionW';
 import ChampionE from './ChampionE';
 import ChampionR from './ChampionR';
+import { gsap } from 'gsap';
 
 
 const cards = [
@@ -29,14 +30,20 @@ class ChampionInfo extends React.Component {
      
      index = (index + 1) % cards.length;
      this.setState({ index });
-     
+     gsap.fromTo(".champion-details", {opacity: 0, x: 170}, {opacity: 1, x: 0, duration: 1.25});
   }
 
   prevCard = () => {
     let index = this.state.index;
     index = (index + cards.length - 1) % cards.length;
     this.setState({ index });
+    gsap.fromTo(".champion-details", {opacity: 0, x: -170}, {opacity: 1, x: 0, duration: 1.25});
   }
+
+  swipeLeft = (e) => {
+    console.log(e.touches);
+  }
+
 
   render() {
     const cards = [
@@ -53,13 +60,12 @@ class ChampionInfo extends React.Component {
           <div className="arrow-container">
             <button className="arrow-button left" onClick={this.prevCard} />
           </div>
-          <div className="champion-details">{cards[this.state.index] }</div>
+          <div className="champion-details" onTouchStart={this.swipeLeft}>{cards[this.state.index] }</div>
           <div className="arrow-container">
             <button className="arrow-button" onClick={this.nextCard} />
           </div>
         </div>
         <div className="bottom-container"></div>
-        {console.log(this.props.details)}
       </div>
     );
   }

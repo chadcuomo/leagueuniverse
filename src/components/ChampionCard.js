@@ -10,18 +10,7 @@ class ChampionCard extends React.Component {
     }
   }
 
-  goHome = () => {
-    gsap.to('.mainpage-container', {
-      duration: 1,
-      y: 0,
-      
-    });
-    gsap.to('.championcard-container', {
-      duration: 1,
-      y: 1000,
-    })
-  }
-
+  
   revealInfo = () => {
     gsap.to('.championinfo-container', {
       duration: 1,
@@ -32,14 +21,13 @@ class ChampionCard extends React.Component {
       duration: 1.5,
       rotate: '90deg',
     });
-    gsap.to('.titles', {
+    gsap.to('.empty-div2', {
       duration: 1,
-      y: -200,
+      height: '30vh'
     });
     let infoShown = { ...this.state.infoShown };
     infoShown = 1;
     this.setState({ infoShown });
-    console.log(infoShown)
   }
 
   hideInfo = () => {
@@ -52,9 +40,9 @@ class ChampionCard extends React.Component {
       duration: 1.5,
       rotate: '90deg',
     });
-    gsap.to('.titles', {
+    gsap.to('.empty-div2', {
       duration: 1,
-      y: 0,
+      height: 0,
     });
     let infoShown = { ...this.state.infoShown };
     infoShown = 0;
@@ -83,8 +71,8 @@ class ChampionCard extends React.Component {
       >
         <div className="home-button">
           <div className="home-button-container">
-            <button className="home-arrow" onClick={this.goHome}></button>
-            <button className="home" onClick={this.goHome}>Home</button>
+            <button className="home-arrow" onClick={() => this.props.goHome(id)}></button>
+            <button className="home" onClick={this.props.goHome}>Home</button>
           </div>
         </div>
         <div className="empty-div full"></div>
