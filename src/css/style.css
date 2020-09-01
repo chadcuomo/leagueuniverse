@@ -565,6 +565,14 @@ h2 {
       margin-bottom: -25px;
       
     }
+
+    .welcome-container {
+      height: calc(var(--vh, 1vh) * 100);
+    }
+
+    .mainpage-container {
+      height: calc(var(--vh, 1vh) * 100);
+    }
     
 
    /*Champion Card*/
