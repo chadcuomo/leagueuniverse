@@ -6,14 +6,14 @@ import { gsap } from 'gsap';
 class MainPage extends React.Component {
   componentDidMount() {
     gsap.from('.mainheader-container', {
-      duration: 1,
+      duration: 0.75,
       y: -200,
       ease: 'power1.in',
       delay: 0.5,
       opacity: 0,
     });
     gsap.from('.maincontent-container', {
-      duration: 1,
+      duration: 0.75,
       y: 200,
       ease: 'power1.in',
       delay: 0.5,
@@ -32,7 +32,7 @@ class MainPage extends React.Component {
     gsap.from('.maincontent-inner', {
       duration: 2,
       opacity: 0,
-      delay: 3,
+      delay: 2.75,
     });
   }
 

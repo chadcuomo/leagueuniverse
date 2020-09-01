@@ -10,6 +10,22 @@ class ChampionCard extends React.Component {
     }
   }
 
+  changeBackground = () => {
+    const id = this.props.details.id;
+    const champCard = document.querySelector('.championcard-container')
+    let smallScreen = window.matchMedia('(max-width: 400px)');
+    console.log(champCard);
+    if (smallScreen.matches) {
+      champCard.style.backgroundImage = `url("http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg")`;
+    } else {
+      champCard.style.backgroundImage =  `url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg")`;
+    }
+  }
+
+  componentDidMount() {
+    this.changeBackground();
+  }
+
   
   revealInfo = () => {
     gsap.to('.championinfo-container', {
@@ -38,7 +54,7 @@ class ChampionCard extends React.Component {
     });
     gsap.to('.up', {
       duration: 1.5,
-      rotate: '90deg',
+      rotate: '-90deg',
     });
     gsap.to('.empty-div2', {
       duration: 1,
@@ -65,9 +81,6 @@ class ChampionCard extends React.Component {
     return (
       <div
         className="championcard-container"
-        style={{
-          backgroundImage: `url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg")`,
-        }}
       >
         <div className="home-button">
           <div className="home-button-container">

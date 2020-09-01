@@ -241,216 +241,216 @@
     .svg-title-small path:nth-child(1){
         stroke-dasharray: 330px;
         stroke-dashoffset: 330px;
-        animation: line-anim 2s ease forwards;
+        animation: line-anim 0.75s ease forwards;
     }
     
     .svg-title-small path:nth-child(2){
         stroke-dasharray: 208px;
         stroke-dashoffset: 208px;
-        animation: line-anim 2s ease forwards 0.3s;
+        animation: line-anim 0.75s ease forwards 0.2s;
     }
     
     .svg-title-small path:nth-child(3){
         stroke-dasharray: 148px;
         stroke-dashoffset: 148px;
-        animation: line-anim 2s ease forwards 0.6s;
+        animation: line-anim 0.75s ease forwards 0.4s;
     }
     
     .svg-title-small path:nth-child(4){
         stroke-dasharray: 203px;
         stroke-dashoffset: 203px;
-        animation: line-anim 2s ease forwards 0.9s;
+        animation: line-anim 0.75s ease forwards 0.6s;
     }
     
     .svg-title-small path:nth-child(5){
         stroke-dasharray: 216px;
         stroke-dashoffset: 216px;
-        animation: line-anim 2s ease forwards 1.2s;
+        animation: line-anim 0.75s ease forwards 0.8s;
     }
     
     .svg-title-small path:nth-child(6){
         stroke-dasharray: 261px;
         stroke-dashoffset: 261px;
-        animation: line-anim 2s ease forwards 1.5s;
+        animation: line-anim 0.75s ease forwards 1s;
     }
     
     .svg-title-small path:nth-child(7){
         stroke-dasharray: 208px;
         stroke-dashoffset: 208px;
-        animation: line-anim 2s ease forwards 1.8s;
+        animation: line-anim 0.75s ease forwards 1.2s;
     }
     
     .svg-title-small path:nth-child(8){
         stroke-dasharray: 156px;
         stroke-dashoffset: 156px;
-        animation: line-anim 2s ease forwards 2.1s;
+        animation: line-anim 0.75s ease forwards 1.4s;
     }
     
     .svg-title-small path:nth-child(9){
         stroke-dasharray: 216px;
         stroke-dashoffset: 216px;
-        animation: line-anim 2s ease forwards 2.4s;
+        animation: line-anim 0.75s ease forwards 1.6s;
     }
     
     .svg-title-small path:nth-child(10){
         stroke-dasharray: 156px;
         stroke-dashoffset: 156px;
-        animation: line-anim 2s ease forwards 2.7s;
+        animation: line-anim 0.75s ease forwards 1.8s;
     }
     
     .svg-title-small path:nth-child(11){
         stroke-dasharray: 239px;
         stroke-dashoffset: 239px;
-        animation: line-anim 2s ease forwards 3s;
+        animation: line-anim 0.75s ease forwards 2s;
     }
     
     .svg-title-small path:nth-child(12){
         stroke-dasharray: 208px;
         stroke-dashoffset: 208px;
-        animation: line-anim 2s ease forwards 3.3s;
+        animation: line-anim 0.75s ease forwards 2.4s;
     }
     
     .svg-title-small path:nth-child(13){
         stroke-dasharray: 148px;
         stroke-dashoffset: 148px;
-        animation: line-anim 2s ease forwards 3.6s;
+        animation: line-anim 0.75s ease forwards 2.6s;
     }
     
     .svg-title-small path:nth-child(14){
         stroke-dasharray: 208px;
         stroke-dashoffset: 208px;
-        animation: line-anim 2s ease forwards 3.9s;
+        animation: line-anim 0.75s ease forwards 2.8s;
     }
     
     .svg-title-small path:nth-child(15){
         stroke-dasharray: 204px;
         stroke-dashoffset: 204px;
-        animation: line-anim 2s ease forwards 4.2s;
+        animation: line-anim 0.75s ease forwards 3s;
     }
     
     .svg-title-small path:nth-child(16){
         stroke-dasharray: 230px;
         stroke-dashoffset: 230px;
-        animation: line-anim 2s ease forwards 4.5s;
+        animation: line-anim 0.75s ease forwards 3.2s;
     }
     
     .svg-title-small path:nth-child(17){
         stroke-dasharray: 225px;
         stroke-dashoffset: 225px;
-        animation: line-anim 2s ease forwards 4.8s;
+        animation: line-anim 0.75s ease forwards 3.4s;
     }
     
     .svg-title-small path:nth-child(18){
         stroke-dasharray: 208px;
         stroke-dashoffset: 208px;
-        animation: line-anim 2s ease forwards 5.1s;
+        animation: line-anim 0.75s ease forwards 3.6s;
     }
     
     .svg-title-small path:nth-child(19){
         stroke-dasharray: 216px;
         stroke-dashoffset: 216px;
-        animation: line-anim 2s ease forwards 5.1s;
+        animation: line-anim 0.75s ease forwards 3.6s;
     }
     
     .svg-title-small path:nth-child(20){
         stroke-dasharray: 178px;
         stroke-dashoffset: 178px;
-        animation: line-anim 2s ease forwards 4.8s;
+        animation: line-anim 0.75s ease forwards 3.4s;
     }
     
     .svg-title-small path:nth-child(21){
         stroke-dasharray: 148px;
         stroke-dashoffset: 148px;
-        animation: line-anim 2s ease forwards 4.5s;
+        animation: line-anim 0.75s ease forwards 3s;
     }
     
     .svg-title-small path:nth-child(22){
         stroke-dasharray: 208px;
         stroke-dashoffset: 208px;
-        animation: line-anim 2s ease forwards 4.2s;
+        animation: line-anim 0.75s ease forwards 2.8s;
     }
     
     .svg-title-small path:nth-child(23){
         stroke-dasharray: 230px;
         stroke-dashoffset: 230px;
-        animation: line-anim 2s ease forwards 3.9s;
+        animation: line-anim 0.75s ease forwards 2.6s;
     }
     
     .svg-title-small path:nth-child(24){
         stroke-dasharray: 208px;
         stroke-dashoffset: 208px;
-        animation: line-anim 2s ease forwards 3.6s;
+        animation: line-anim 0.75s ease forwards 2.4s;
     }
     
     .svg-title-small path:nth-child(25){
         stroke-dasharray: 245px;
         stroke-dashoffset: 245px;
-        animation: line-anim 2s ease forwards 3.3s;
+        animation: line-anim 0.75s ease forwards 2s;
     }
     
     .svg-title-small path:nth-child(26){
         stroke-dasharray: 226px;
         stroke-dashoffset: 226px;
-        animation: line-anim 2s ease forwards 3s;
+        animation: line-anim 0.75s ease forwards 1.8s;
     }
     
     .svg-title-small path:nth-child(27){
         stroke-dasharray: 226px;
         stroke-dashoffset: 226px;
-        animation: line-anim 2s ease forwards 2.7s;
+        animation: line-anim 0.75s ease forwards 1.6s;
     }
     
     .svg-title-small path:nth-child(28){
         stroke-dasharray: 225px;
         stroke-dashoffset: 225px;
-        animation: line-anim 2s ease forwards 2.4s;
+        animation: line-anim 0.75s ease forwards 1.4s;
     }
     
     .svg-title-small path:nth-child(29){
         stroke-dasharray: 245px;
         stroke-dashoffset: 245px;
-        animation: line-anim 2s ease forwards 2.1s;
+        animation: line-anim 0.75s ease forwards 1.2s;
     }
     
     .svg-title-small path:nth-child(30){
         stroke-dasharray: 118px;
         stroke-dashoffset: 118px;
-        animation: line-anim 2s ease forwards 1.8s;
+        animation: line-anim 0.75s ease forwards 1s;
     }
     
     .svg-title-small path:nth-child(31){
         stroke-dasharray: 196px;
         stroke-dashoffset: 196px;
-        animation: line-anim 2s ease forwards 1.5s;
+        animation: line-anim 0.75s ease forwards 0.8s;
     }
     
     .svg-title-small path:nth-child(32){
         stroke-dasharray: 208px;
         stroke-dashoffset: 208px;
-        animation: line-anim 2s ease forwards 1.2s;
+        animation: line-anim 0.75s ease forwards 0.6s;
     }
     
     .svg-title-small path:nth-child(33){
         stroke-dasharray: 236px;
         stroke-dashoffset: 236px;
-        animation: line-anim 2s ease forwards 0.9s;
+        animation: line-anim 0.75s ease forwards 0.4s;
     }
     
     .svg-title-small path:nth-child(34){
         stroke-dasharray: 226px;
         stroke-dashoffset: 226px;
-        animation: line-anim 2s ease forwards 0.3s;
+        animation: line-anim 0.75s ease forwards 0.2s;
     }
     
     .svg-title-small path:nth-child(35){
         stroke-dasharray: 208px;
         stroke-dashoffset: 208px;
-        animation: line-anim 2s ease forwards;
+        animation: line-anim 0.75s ease forwards;
         
     }
     
     .svg-title-small {
-        animation: fill 1s ease forwards 6.1s;
+        animation: fill 1s ease forwards 3.6s;
     }
 
     

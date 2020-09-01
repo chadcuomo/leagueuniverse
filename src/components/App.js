@@ -42,7 +42,7 @@ class App extends React.Component {
     this.setState({ singleChamp });
     gsap.to('.mainpage-container', {
       duration: 1.25,
-      y: -1200,
+      y: -1500,
       
     });
     gsap.from('.championcard-container', {
