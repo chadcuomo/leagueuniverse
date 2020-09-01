@@ -152,29 +152,6 @@ h2 {
     padding-right: 20px;
     border-radius: 7px;
     border: #cea212 solid 3px;
-    border-right: none;
-  }
-
-  .search:focus {
-    outline: thin; 
-  }
-
-  
-
-  .search-img-ctn {
-    background-color: white;
-    border-radius: 7px;
-    border: #cea212 solid 3px;
-    border-left: white;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    padding-right: 7px;
-    margin-left: -7px;
-  }
-  .search-img {
-    width: 20px;
-    padding-top: 7px;
-    
   }
 
   /* Main Content */
