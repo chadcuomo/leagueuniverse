@@ -1,6 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class ChampionR extends React.Component {
+  static propTypes = {
+    details: PropTypes.object,
+    getChampName: PropTypes.func,
+  };
+
   render() {
     const { spells } = this.props.details;
     const spellsObj = spells[Object.keys(spells)[3]];

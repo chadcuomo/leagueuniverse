@@ -1,6 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Champion extends React.Component {
+  static propTypes = {
+    details: PropTypes.object,
+    getChampName: PropTypes.func,
+  };
+
+
   render() {
     const { name } = this.props.details;
     const img = this.props.details.image.full;

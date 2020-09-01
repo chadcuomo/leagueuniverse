@@ -1,6 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class ChampionTips extends React.Component {
+  static propTypes = {
+    details: PropTypes.object,
+  };
+
   render() {
     return (
       <div className="info-box">

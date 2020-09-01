@@ -3,8 +3,6 @@ import SVGTitle from './SVGTitle';
 import SVGTitleSmall from './SVGTitleSmall';
 import { gsap } from 'gsap'
 
-
-
 class WelcomePage extends React.Component {
   goToMainPage = () => {
     this.props.history.push(`/mainpage`);
@@ -18,10 +16,7 @@ class WelcomePage extends React.Component {
     });
   }
 
-  
-
   render() {
-    
     return (
       <div className="welcome-container">
         <div className="center-container">
@@ -39,7 +34,6 @@ class WelcomePage extends React.Component {
             </button>
           </div>
         </div>
-        
       </div>
     );
   }

@@ -1,6 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class ChampionE extends React.Component {
+  static propTypes = {
+    details: PropTypes.object,
+  };
+
   render() {
     const { spells } = this.props.details;
     const spellsObj = spells[Object.keys(spells)[2]];

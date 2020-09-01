@@ -1,7 +1,13 @@
 import React from 'react';
 import Champion from './Champion';
+import PropTypes from 'prop-types';
 
 class MainContent extends React.Component {
+  static propTypes = {
+    allChamps: PropTypes.object,
+    searchfield: PropTypes.object,
+  };
+
   render() {
     const filteredChamps = Object.keys(this.props.allChamps).filter(
       (filteredChamps) => {

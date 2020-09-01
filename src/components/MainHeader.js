@@ -1,7 +1,12 @@
 import React from 'react';
 import Searchbox from './Searchbox';
+import PropTypes from 'prop-types';
 
 class MainHeader extends React.Component {
+  static propTypes = {
+    searchChange: PropTypes.func,
+  };
+
   render() {
     return (
       <div className="mainheader-container">
