@@ -5,8 +5,10 @@
 html, body {
     background-color: #1d1d1d;
     margin: 0;
+    padding: 0;
     overflow: hidden;
-    
+    -webkit-margin: 0;
+    -webkit-padding: 0;
 }
 
 h2 {
