@@ -36,7 +36,7 @@ class App extends React.Component {
 
   getChampName = async (key) => {
     let singleChamp = { ...this.state.singleChamp };
-    const resp = await fetch(`http://ddragon.leagueoflegends.com/cdn/10.16.1/data/en_US/champion/${key}.json`);
+    const resp = await fetch(`https://ddragon.leagueoflegends.com/cdn/10.16.1/data/en_US/champion/${key}.json`);
     const champ = await resp.json();
     singleChamp = champ.data;
     this.setState({ singleChamp });

@@ -15,9 +15,9 @@ class ChampionCard extends React.Component {
     const champCard = document.querySelector('.championcard-container')
     let smallScreen = window.matchMedia('(max-width: 400px)');
     if (smallScreen.matches) {
-      champCard.style.backgroundImage = `url("http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg")`;
+      champCard.style.backgroundImage = `url("https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg")`;
     } else {
-      champCard.style.backgroundImage =  `url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg")`;
+      champCard.style.backgroundImage =  `url("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg")`;
     }
   }
 
