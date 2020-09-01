@@ -5,6 +5,12 @@ import * as serviceWorker from './serviceWorker';
 import './css/style.css';
 import './css/logoanimate.css';
 
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  console.log(vh);
+});
+
 ReactDOM.render(<Router />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
