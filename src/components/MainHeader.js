@@ -18,13 +18,6 @@ class MainHeader extends React.Component {
           </div>
           <div className="mainheader-search">
             <Searchbox searchChange={this.props.searchChange} />
-            <div className="search-img-ctn">
-              <img
-                src="/images/search.png"
-                className="search-img"
-                alt="search"
-              />
-            </div>
           </div>
         </div>
       </div>
