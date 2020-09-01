@@ -612,8 +612,10 @@ h2 {
     }
   }
 
-  @media screen and (max-width: 300px) {
-
+  @media screen and (max-width: 375px) {
+    .championcard-container {
+      height: 90vh;
+    }
   }
  
  
