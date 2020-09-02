@@ -18,7 +18,11 @@ class Champion extends React.Component {
           <h3>{name}</h3>
         </div>
         <div className="champion-img">
-          <img src={imgsrc} alt={name} className="round-img" />
+          <img 
+          src={imgsrc} 
+          alt={name} className="round-img" 
+          onClick={() => this.props.getChampName(this.props.index)}
+          />
         </div>
         <div className="champion-button">
           <button

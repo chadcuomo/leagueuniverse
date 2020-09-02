@@ -22,6 +22,8 @@ h2 {
 
 /*Welcome Component*/
 .welcome-container {
+    position: absolute;
+    width: 100%;
     display: flex;
     background-image: url("/images/league-background.jpg");
     background-repeat: no-repeat;
@@ -67,6 +69,7 @@ h2 {
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
+    cursor: pointer;
   }
   
   .grey-button:before {
@@ -195,6 +198,7 @@ h2 {
     width: 100%;
     text-align: center;
     margin-top: -15px;
+    cursor: pointer;
   }
 
   .champion-button {
@@ -232,6 +236,7 @@ h2 {
 
   .home-button {
     margin-top: 10px;
+    cursor: pointer;
   }
 
   .home-button-container {
@@ -257,6 +262,7 @@ h2 {
     background-color: #0000;
     transform: rotate(-90deg);
     text-shadow: 1px 1px 6px black;
+    cursor: pointer;
   }
 
   .home {
@@ -269,6 +275,11 @@ h2 {
     font-weight: 700;
     padding-top: 5px;
     text-shadow: 1px 1px 6px black;
+    cursor: pointer;
+  }
+
+  .home:hover {
+    color: #dfc983;
   }
 
   .home-arrow:hover {
@@ -323,6 +334,7 @@ h2 {
     background-color: #0000;
     border: none;
     text-shadow: 1px 1px 6px black;
+    cursor: pointer;
   }
 
   .arrow-button:hover {
@@ -419,7 +431,7 @@ h2 {
     color: #C3B68C;
     font-size: 24px;
     line-height: 50px;
-    overflow: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     height: 80%;
   }

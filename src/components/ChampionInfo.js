@@ -43,7 +43,7 @@ class ChampionInfo extends React.Component {
   }
 
   handleGesture = () => {
-    if (touchendX < (touchstartX - 30) ) {
+    if (touchendX < (touchstartX - 100) ) {
       let index = this.state.index;
       index = (index + 1) % cards.length;
       this.setState({ index });
@@ -51,7 +51,7 @@ class ChampionInfo extends React.Component {
       console.log('Swiped left');
     }
     
-    if (touchendX > (touchstartX + 30) ) {
+    if (touchendX > (touchstartX + 100) ) {
       let index = this.state.index;
       index = (index + cards.length - 1) % cards.length;
       this.setState({ index });

@@ -10,9 +10,9 @@ class WelcomePage extends React.Component {
 
   componentDidMount() {
     gsap.from('.center-button', {
-      duration: 1,
+      duration: 1.5,
       opacity: 0,
-      delay: 4.5,
+      delay: 0.5,
     });
   }
 
